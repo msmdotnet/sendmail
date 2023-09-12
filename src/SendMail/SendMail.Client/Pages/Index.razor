@@ -1,0 +1,18 @@
+﻿@page "/"
+
+<div class="mt-3">To:</div>
+<div>
+    <InputText class="form-control" @bind-Value=To></InputText>
+</div>
+
+<div class="mt-3">Subject:</div>
+<div>
+    <InputText class="form-control" @bind-Value=Subject></InputText>
+</div>
+
+<div class="mt-3">Message:</div>
+<div>
+    <InputTextArea class="form-control" @bind-Value=Body></InputTextArea>
+</div>
+
+<button class="btn btn-primary mt-3" @onclick=SendMail>Send</button>
